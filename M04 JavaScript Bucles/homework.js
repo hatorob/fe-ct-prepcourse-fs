@@ -197,6 +197,14 @@ function esPrimo(num) {
   } else {
     return false;
   }
+
+  /* así era la solución del profe
+      if(numero === 1 || numero === 0) return false;
+      for(let i = 2; i < numero; i++ ) {
+         if(numero % i === 0) return false
+      }
+      return true;
+  */
 }
 
 function esVerdadero(valor) {
