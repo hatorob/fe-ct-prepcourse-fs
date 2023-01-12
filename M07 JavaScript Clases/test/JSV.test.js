@@ -41,11 +41,11 @@ describe('JAVASCRIPT V', function () {
 
       describe('agregarMetodoPrototype(Constructor)', function () {
          it('Debe agregar un método "saludar" al contructor de Usuario', function () {
-            function Test() {
+            function Constructor() {
                this.test = true;
             }
-            agregarMetodoPrototype(Test);
-            const test = new Test();
+            agregarMetodoPrototype(Constructor);
+            const test = new Constructor();
             expect(test.saludar()).toBe('Hello World!');
          });
       });
